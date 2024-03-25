@@ -16,3 +16,6 @@ the function and run automatically when you commit through a GitHub action.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+This visits each node using the hasCycle function which has a complexity of |V|, and then try to find a path back to that node using an adjusted version of the depth first search. This version of DFS has a runtime complexity of |V|+|E| and since we are doing the search operation for each node, the overall worst case runtime complexity would be $\Theta$ (|V|(|V|+|E|))
+
